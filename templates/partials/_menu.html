@@ -6,10 +6,10 @@
         <a href="{% url 'cadastro' %}"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> Cadastro</a>
         {% if user.is_authenticated %}
             <a href="{% url 'logout' %}"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Logout</a>
+            <a href="{% url 'nova-imagem' %}"><img src="{% static '/assets/ícones/1x/new.png' %}"> Nova imagem</a>
         {% else %}
             <a href="{% url 'login' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> Login</a>
             <a href="{% url 'logout' %}"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Logout</a>
         {% endif %}
-        <a href="{% url 'nova-imagem' %}"><img src="{% static '/assets/ícones/1x/new.png' %}"> Nova imagem</a>
     </nav>
 </section>
