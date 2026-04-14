@@ -99,6 +99,7 @@ table {
     display: flex;
     margin: 0 auto;
     width: 100%;
+    color: #c9c9c9;
 }
 
 .busca__input {
@@ -109,6 +110,7 @@ table {
     height: 24px;
     padding: 10px;
     width: 500px;
+    color: #c9c9c9;
 }
 
 .busca__icone {
@@ -534,4 +536,36 @@ table {
     appearance: none;
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -3.5rem;
+    gap: 5rem;
+}
+
+.social-media-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media-icon {
+    height: 5rem;
+    width: 5rem;
+    margin-top: 5rem;
+}
+
+.social-media-details a p {
+    color: var(--offwhite);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }

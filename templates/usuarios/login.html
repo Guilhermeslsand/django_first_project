@@ -13,6 +13,16 @@
             </div>
             {% endfor %}
         </div>
+        <div class="social-media">
+            <div class="social-media-details">
+                <a href="http://localhost:8000/accounts/github/login/?process=login&next={% url 'index' %}">
+                    <img src="{% static '/assets/ícones/1x/github.svg' %}" 
+                    alt="Ícone para realizar a Autenticação com o Github"
+                    class="social-media-icon">
+                    <p style="color:#D9D9D9; margin-bottom: 5px;">Github</p>
+                </a>
+            </div>
+        </div>
         <div>
             <button type="submit" class="btn btn-success col-12" style="padding: top 5px;">Logar</button>
         </div>

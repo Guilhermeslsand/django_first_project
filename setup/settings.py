@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'apps.usuarios.apps.UsuariosConfig',
 
     #OAuth 2.0
-    'apps.oauth2.apps.Oauth2Config',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -182,10 +181,10 @@ SOCIALACCOUNT_PROVIDERS = {
 }
 
 # Redirecionamento do account do allauth
-LOGIN_REDIRECT_URL = '/members'
+LOGIN_REDIRECT_URL = '/'
 
 SOCIALACCOUNT_LOGIN_ON_GET = True
 
 ACCOUNT_LOGOUT_ON_GET = True
 
-LOGOUT_REDIRECT_URL = '/oauth'
+LOGOUT_REDIRECT_URL = '/'
