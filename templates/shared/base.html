@@ -1,3 +1,4 @@
+<!-- base -->
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,10 +14,17 @@
     <link rel="stylesheet" href="{% static '/styles/style.css' %}">
 </head>
 
+
 <body>
-    {% include 'partials/_menu.html' %}
-    {% block content %}{% endblock %}
+    <div class="pagina-inicial">
+        {% include 'partials/_pagina-inicial.html' %}
+        <main class="principal">
+            {% include 'partials/_menu.html' %}
+            {% block content %}{% endblock %}
+        </main>
+    </div>
     {% include 'partials/_footer.html' %}
 </body>
+
 
 </html>

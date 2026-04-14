@@ -1,0 +1,18 @@
+<!-- _galeria -->
+{% load static %}
+<section class="galeria">
+    <div class="cards">
+        <h2 class="cards__titulo">Navegue pela galeria</h2>
+        <ul class="cards__lista">
+            {% if cards %}
+                {% for fotografia in cards %}
+                    {% include 'partials/_card.html' %}
+                {% endfor %}
+            {% else %}
+                <div class="imagem__texto">
+                    <p>Fotografias não encontradas</p>
+                </div>
+            {% endif %}
+        </ul>
+    </div>
+</section>
