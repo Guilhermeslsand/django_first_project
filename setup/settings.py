@@ -40,11 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'galeria.apps.GaleriaConfig',
-    'usuarios.apps.UsuariosConfig',
+    'apps.galeria.apps.GaleriaConfig',
+    'apps.usuarios.apps.UsuariosConfig',
 
     #OAuth 2.0
-    'oauth2.apps.Oauth2Config',
+    'apps.oauth2.apps.Oauth2Config',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
