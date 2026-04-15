@@ -4,7 +4,7 @@ botocore==1.42.89
 certifi==2026.2.25
 cffi==2.0.0
 charset-normalizer==3.4.7
-cryptography==46.0.6
+cryptography==46.0.7
 Django==6.0.3
 django-allauth==65.15.1
 django-storages==1.14.6
